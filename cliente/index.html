@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Gestión de Notas</h1>
+        <div class="filter-section">
+            <label for="filterMonth">Filtrar por mes:</label>
+            <input type="month" id="filterMonth">
+            <button id="filterButton">Filtrar</button>
+        </div>
+        <div id="notes"></div>
+        <div class="add-note-section">
+            <h2>Agregar Nota</h2>
+            <form id="noteForm">
+                <label for="tipo">Tipo:</label>
+                <select id="tipo">
+                    <option value="normal">Normal</option>
+                    <option value="critica">Crítica</option>
+                </select>
+                <label for="contenido">Contenido:</label>
+                <input type="text" id="contenido">
+                <label for="fecha">Fecha:</label>
+                <input type="date" id="fecha">
+                <button type="submit">Agregar</button>
+            </form>
+        </div>
+    </div>
+    <script type="module" src="js/index.js"></script>
+</body>
+</html>
